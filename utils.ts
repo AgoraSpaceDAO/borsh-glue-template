@@ -1,3 +1,5 @@
+import { TransactionInstruction } from "@solana/web3.js";
+
 export function parseInstruction(jsonString) {
     let parsed = JSON.parse(jsonString, function(key, value) {
         if (key === "accounts") {
@@ -15,5 +17,5 @@ export function parseInstruction(jsonString) {
         }
         return value;
     });
-    return parsed;
+    return new TransactionInstruction(parsed);
 }
