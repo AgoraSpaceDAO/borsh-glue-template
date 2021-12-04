@@ -1,7 +1,7 @@
 import { BinaryReader, BinaryWriter } from "borsh"
 import { PublicKey } from "@solana/web3.js"
 
-export default const borshPublicKey = () => {
+export const borshPublicKey = () => {
   ;(BinaryReader.prototype as any).readPublicKey = function () {
     const reader = this as unknown as BinaryReader
     const array = reader.readFixedArray(32)
