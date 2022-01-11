@@ -1,5 +1,5 @@
 {
-  "name": "zgsol-borsh-schema",
+  "name": "contract-logic",
   "version": "1.0.0",
   "description": "hello",
   "scripts": {
@@ -14,5 +14,8 @@
     "@solana/web3.js": "^1.30.2",
     "bn": "^1.0.5",
     "borsh": "^0.6.0"
+  },
+  "dev-depencencies": {
+    "node-fetch": "^3.1.0"
   }
 }
