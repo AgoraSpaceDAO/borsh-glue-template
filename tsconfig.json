@@ -1,11 +1,13 @@
 {
   "compilerOptions": {
     "esModuleInterop": true,
-    "allowJs": true
+    "allowJs": true,
+    "module": "commonjs"
+    "lib": [
+      "es2015",
+      "esnext",
+      "dom",
+    ],
+    "target": "esnext"
   },
-  "ts-node": {
-    "compilerOptions": {
-      "module": "CommonJS"
-    }
-  }
 }
