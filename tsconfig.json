@@ -6,6 +6,13 @@
     "esModuleInterop": true,
     "allowJs": true,
     "declaration": true,
+    "moduleResolution": "node",
+    "preserveSymlinks": true,
+    "preserveWatchOutput": true,
+    "pretty": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "experimentalDecorators": true,
   },
   "include": ["src"],
   "exclude": ["node_modules", "lib", "**/*.test.ts"]
